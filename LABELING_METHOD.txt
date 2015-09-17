@@ -1,0 +1,39 @@
+Arributes and Label Generating Method. 
+======================================================================
+1. Take the one hour as a range window interval: 
+    By judging whether the hour is the same hour as beforre, we reset the data,calculate the data (atrributes), output into files. 
+
+2. Attribute (1) : min ask in one window 
+3. Attribute (2) : max ask in one window 
+4. Attribute (3) : average ask in one window : By collecting ask on every second and divide the count in the window. 
+5. Attribute (4) : min bid in one window 
+6. Attribute (5) : max bid in one window 
+7. Attribute (6) : average bid in one window : By collecting bid on every second and divide the count in the window. 
+8. Attribute (7) : min spread in one window  (spread = (ask - bid)/bid) always stay positive .
+9. Attribute (8) : max spread in one window 
+10. Attribute (9) : average spread in one window  : By collecting spread on every second and divide the count in the window. 
+11. Attribute (10) : bid direction in one window 
+    I take 1 is postive direction , -1 as negative direction. 
+    (1) The direction of this for furture(forward) is the neg of the direction if calcuate to the backward : 
+    For example : 
+    A  .................. bid = 5 
+    B  ...................bid = 7
+    C  ...................bid = 9
+    Direction of B  (furture from B -> C ) is: 
+       - [ (B - C)] so, we can predict the furture that from B->C , the direction is Positive. 
+
+12. Attribute (11) : ask direction in one window. Like bid mehtod. 
+
+Improvement ======================================================================
+(1) Even the time slots are not continuous, by judge whteher the hour is the   same as before, the data and direction can be continuous. 
+
+(2) Output the last line data after the loop.
+
+Comments
+======================================================================
+(1) For the columns are so many, please zoom the window to show the alignment data  output . 
+
+Thanks.
+
+
+
