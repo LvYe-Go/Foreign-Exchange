@@ -14,7 +14,8 @@ test.py: test function
 parseImage.py: parse images, rescale function 
 getSiftFeature.py:  Use sift alogrithms and functions
 
-lab_notebook.md: The description of the method and process of the classification
+lab_notebook.md: 
+The description of the method and process of the classification
 
-midterm_slides.pptx: slides
+midterm_slides.pptx: Non-technical audience presentation slides
 
