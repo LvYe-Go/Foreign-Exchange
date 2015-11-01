@@ -1,7 +1,8 @@
 Author: Jing Yu
 Andrew ID: jingyu
 
-1. Install and Config Cassandra: 
+1. Install and Config Cassandra 
+======================================================================
 I use the dependencies provided from piazza :) 
 
 Creating Cassandra:
@@ -22,9 +23,9 @@ system_traces  system
 
 cqlsh>
 
-2. DataSet:
-Create Two tables from input into Cassandra, test, train 
+2. DataSet
 ======================================================================
+Create Two tables from input into Cassandra, test, train 
 (1). id primary key for each row  , 
 each column like map<key, map<key, value>> 
 
@@ -39,13 +40,15 @@ column_4 the aid_direction
 Still 2/3 of the data of in training table, 1/3 data from test table.
 
 3. Methods
+======================================================================
    (1) Install config canssdra on local machine 
    (2) Init cassandra cluste, seesion , timeout etc, 
    (3) Output Code piece to write into cassandra instead of File I/O
    (4) Information Gain calculation, Decision Tree, Test random forest input from cassandra instead of   File I/O
    (5) Remove all I/O exception from input and out put 
 
-4.  File Management : 
+4. File Management
+======================================================================
 Cassandra package: 
 (1)cassandra.java provide: init cassandra cluster and specific session , timeout .
 
