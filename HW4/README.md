@@ -73,6 +73,8 @@ RandomForest Package:
 
 5. Can be improved  
 ======================================================================
-(1) Even the time slots are not continuous
+(1) Can find the most suitable random forest tree number
 
 (2) Can use Maven let it more automatic 
+
+(3) structure can be more splified
