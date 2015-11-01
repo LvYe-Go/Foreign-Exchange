@@ -26,7 +26,7 @@ cqlsh>
 2. DataSet
 ======================================================================
 Create Two tables from input into Cassandra, test, train 
-(1). id primary key for each row  , 
+(1). id primary key for each row 
 each column like map<key, map<key, value>> 
 
 column_1  avg_bid : the avg of bid in one hour
@@ -42,24 +42,33 @@ Still 2/3 of the data of in training table, 1/3 data from test table.
 3. Methods
 ======================================================================
    (1) Install config canssdra on local machine 
-   (2) Init cassandra cluste, seesion , timeout etc, 
+
+   (2) Init cassandra cluste, seesion , timeout etc
+
    (3) Output Code piece to write into cassandra instead of File I/O
+
    (4) Information Gain calculation, Decision Tree, Test random forest input from cassandra instead of   File I/O
+
    (5) Remove all I/O exception from input and out put 
 
 4. File Management
 ======================================================================
 Cassandra package: 
-(1)cassandra.java provide: init cassandra cluster and specific session , timeout .
+
+(1)cassandra.java provide: init cassandra cluster and specific session timeout .
 
 Decision Tree Package: 
 (1) DecisionTree.java : main to init parameters and call other functions 
 (2) DecisionTree.java : Test decision tree input from canssdra instead of File I/O 
+
 (3) DecisionTree.java : Utlis parameters for decision tree
 
 RandomForest Package: 
+
 (1) RandomForest.java : main to init parameters and call other functions 
+
 (2) RandomForestTest.java  : Test random forest tree input from canssdra instead of File I/O 
+
 (3) RandomForestUtil.java : Utlis parameters for random forest tree
 
 5. Can be improved  
