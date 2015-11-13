@@ -7,7 +7,7 @@ Andrew ID: jingyu
  Map -> shuffle -> reduce  : In RandomForest.java 
 
  Serailze/ Deserailze : RandomForestUtil.java 
- 
+
 (1) Gson 2.2 to convert tree into String 
 (2) Hadoop Mapreduce Client Core » 2.7.1
 (3)Handling plits N lines of input as one split.
@@ -43,5 +43,6 @@ RandomForest Package:
 
 ====> Bonus Part: LocalClientTest.java
 
-4. Need Improvement 
+4 Need Improvement 
+
 Can compare speed with implementing Map Reduce method on desion tree and need furthere analyse.
