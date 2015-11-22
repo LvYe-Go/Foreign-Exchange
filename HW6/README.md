@@ -43,7 +43,6 @@ build.sbt: Indicates the version used
 
 TreeNum |  Accuracy  
 
---------+----------
 2       |    0.5118
 
 3       |    0.5118
