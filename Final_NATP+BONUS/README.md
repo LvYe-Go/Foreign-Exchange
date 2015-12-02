@@ -15,11 +15,8 @@ The readme is about NTAP and improment on the transformer on features.
 2. Tansformers and estimators from the Spark ML Pipelines framework.
 
 Reference : 
-            
             http://spark.apache.org/docs/latest/ml-guide.html#transformer
-
             https://spark.apache.org/docs/1.5.1/ml-features 
-            
             (some codes also refer to them)
 
 About feature transformer selecting and comparsion 
