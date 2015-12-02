@@ -15,8 +15,13 @@ The readme is about NTAP and improment on the transformer on features.
 2. Tansformers and estimators from the Spark ML Pipelines framework.
 
 Reference : http://spark.apache.org/docs/latest/ml-guide.html#transformers
-            https://spark.apache.org/docs/1.5.1/ml-features.html#vectorassembler (some codes also refer to them)
-            
+
+            https://spark.apache.org/docs/1.5.1/ml-features.
+
+            html#vectorassembler 
+
+            (some codes also refer to them)
+
 About feature transformer selecting and comparsion 
 
 (1)A Transformer is an abstraction that includes feature transformers and learned models. Technically, a Transformer implements a method transform(), which converts one DataFrame into another, generally by appending one or more columns
@@ -48,4 +53,4 @@ About feature transformer selecting and comparsion
      
      Through the result is not much improve, but this feature transformers and estimators can be used effciently and easily in different feature reuiqrements. This can let researcher focus on analysis instead of transforming themselves. 
 
-     They Also can be autimitically used after feature extrator, so the pipeline framework will be done.
+     They also can be autimitically used after feature extrator, so the pipeline framework will be done.
