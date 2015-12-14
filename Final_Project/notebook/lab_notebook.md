@@ -290,7 +290,9 @@ The noise of the data,  it may contain items info which can  not match the model
 LDA are base on pre knowledge of the model, we may need more classificatied pre knowledge to train our model to get more accurate topic in different levels.
     
     3. Corner Cases: 
+   
    (1) Some topics do not have sub topics 
+
    (2) Same topics may belong to different upper topics
   
     4. Speed the processing for big data

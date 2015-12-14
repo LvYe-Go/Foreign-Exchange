@@ -8,6 +8,8 @@ Date: 12/14/2016
 
 1 Code in the src 
 
+Main : TopicVisual.java 
+
 Through using package, implemented my method on generating heirachical topics and converting content to visulization in html :) . I marked in comments, which parts are my codes. 
 
 2 Files Management 
@@ -32,7 +34,7 @@ Through using package, implemented my method on generating heirachical topics an
 
 ------  SLNode.java : Class for store second level topics
 
------- TopicVisual.java:  Main methods including train data and coverting data.
+------  TopicVisual.java:  Main methods including train data and coverting data.
 
     *Packages: 
 
@@ -40,12 +42,13 @@ Including packages needed for the project
 
     *Visulization:
 
-visulization result including three types of chart  nad html result
+visulization result including three types of chart and html resuls
 
-    *Screenshot
-Including all screenshot for notebook
+    *Noteboook
 
-3  Project explanation  and reason in lab_notebook.md  
+Including notebook for the project process and all screenshot for notebook
+
+3  Project explanation and reason in lab_notebook.md  
 
 4  I visulaized the data heirachical topics by three types of graph 
    Please open in firefox browser .
