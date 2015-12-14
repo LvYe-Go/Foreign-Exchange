@@ -14,9 +14,10 @@ package lda;
 import java.io.*;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
+import java.til.List;
 
 /**
+*  Reference : http://jsfiddle.net/9FqKS/
  * Modified by Jing Yu
  * Date: 12/11/201
  */

@@ -4,14 +4,14 @@
  * <email>hankcs.cn@gmail.com</email>
  * <create-date>2015/1/29 17:08</create-date>
  *
- * <copyright file="Vocabulary.java" company="上海林原信息科技有限公司">
- * Copyright (c) 2003-2014, 上海林原信息科技有限公司. All Right Reserved, http://www.linrunsoft.com/
- * This source is subject to the LinrunSpace License. Please contact 上海林原信息科技有限公司 to get more information.
+ * <copyright file="Vocabulary.java" >
+ * Copyright (c) 2003-2014,  All Right Reserved, http://www.linrunsoft.com/
+ * This source is subject to the LinrunSpace License. Please contact to get more information.
  * </copyright>
  */
 package lda;
 
-/**
+/**Reference : http://jsfiddle.net/9FqKS/
  * Modified by :
  * Jing Yu 
  * Andrew ID： Jing Yu
