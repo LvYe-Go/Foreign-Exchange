@@ -1,9 +1,6 @@
 11676 Final Project 
-
 Author: Jing Yu
-
 Andrew ID: jingyu
-
 Date: 12/12/2016
 
 1. Code in the src 
@@ -32,6 +29,13 @@ SLNode.java : Class for store second level topics
 
 TopicVisual.java:  Main methods including train data and coverting data.
 
-2. Project explanation in lab_notebook.md  
+2. Project explanation  and reason in lab_notebook.md  
+
+3. I visulaized the data heirachical topics by three types of graph 
+   - Bubble
+   - Chart
+   - Zoomble
+   
+   Please refer to the screenshot/types to review the result
 
 Thanks.
