@@ -1,7 +1,9 @@
 
 
 # Pubmed Central Topic Visualization
+
 Name : Jing Yu
+
 Andrew ID: jingyu 
 
 ## Project Topic 
@@ -18,7 +20,7 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/articles.txt.O-Z.tar.gz
 
 ## Methods In General 
 
-I attempted two methods, TF-IDF  and LDA two level 
+I attempted two methods, TF-IDF  and LDA for 
 
 ## Method  One - TF-IDF
 
@@ -222,11 +224,15 @@ LDA are base on pre knowledge of the model, we may need more classificatied pre 
    (1) Some topics do not have sub topics 
    (2) Same topics may belong to different upper topics
   
+    4. Speed for big data
+The efficiency on processing big date need improvement.  More distributed machine and distributed LDA methods can help on this. 
+
 ## Future work
 
 1. Can prepare more accurate pre knowledge for my LDA adn this project
 2. Explore  more featues for determinng topics 
 3. We can try more machine learning method like TF-IDF to make comparsion
+4. Distributed LDA to speed the processing 
 
 ## Pacakge Used and Reason
 
