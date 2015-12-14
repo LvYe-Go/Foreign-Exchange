@@ -2,11 +2,12 @@
 
 # Pubmed Central Topic Visualization
 Name : Jing Yu
+
 Andrew ID: jingyu 
 
 ## Project Topic 
 
-We could use classification to extract hierarchical topic from files.  I get it to general json format and genrate flare.json to genral  json. Using 3D.js tachonologies to show different format of data visulazation. 
+ The target is utilizing the Pubmed Central (PMC) open access dataset,use classification to extract hierarchical topic from files to process the PMC dataset with a user provided term, then I get it to general json format and genrate flare.json to general  json. Using 3D.js tachonologies to show different format of data visulazation. 
 
 ## Data Source 
 
@@ -23,7 +24,8 @@ ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/articles.txt.O-Z.tar.gz
 
 ## Methods In General 
 
-I attempted two methods, TF-IDF  and LDA two level 
+I attempted two methods, TF-IDF  and LDA for hierarchical topics. 
+I pick up LDA and I will explain why in following parts. 
 
 ## Method  One - TF-IDF
 
@@ -48,7 +50,7 @@ for the second level, we can gather which files are for topic 1, topic 2, etc. T
 
 ## Method  Two  - LDA  (Used in this project)
 
-    * Why I use LDA package 
+    * Why I use LDA  ? 
 
 Reason : LDA takes the relationship to words around other words into consideration, the feaure and topic extracting is more reasonable. 
 
@@ -59,6 +61,8 @@ The project is based on this package and my modification.
     * LDA in big picture
 Latent Dirichlet allocation (LDA) is a generative model that allows sets of observations to be explained by unobserved groups that explain why some parts of the data are similar. For example, if observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's creation is attributable to one of the document's topics.  
 We usually use mark in plate notion to represent the process: 
+
+![alt text](screenshot/notes/1.jpg "theta")
 
 α is the parameter of the Dirichlet prior on the per-document topic distributions,
 
@@ -106,10 +110,14 @@ Please refer to the next part for more detailed explaination :
 
   ```
   
-#### Fist Level Topics
-1. Load corpus from disk 
+#### Feature Extracting : Fist Level Topics 
+
+1. Load corpus from disk
+ 
 2. Create a LDA sampler
+
 3. Train the data using LDA model 
+
 4. Get the phi which have topic
 
 ```java
@@ -128,7 +136,7 @@ Please refer to the next part for more detailed explaination :
         LdaUtil.explain(topicMap); 
 ```
 
-#### First Level Result (Sample)
+#### Feature Extracting : : First Level Result (Sample)
 topic - probability matrix : 
 
 topic 0 :
@@ -157,7 +165,7 @@ non-contaminated=0.0010492813874469014
 
 ....
 
-#### Sub Topics
+#### Feature Extracting : Sub Topics
 
      * The use θ in the next level topics 
 Get the relative documents to the topic in the next level
@@ -205,7 +213,27 @@ Uisng  LDA for the hierarchical topics because LDA are more reasonable on relati
 1. Using Gson to convert the List<Object> to flat json. 
 2. Manually to trnasform the flat json to flare json used in javascript by implementing java. 
 
+```java
+    public static void convertJsontoFlare(List<FLNode> topicLevelList) throws IOException {
+
+        System.out.println("Create the flare json : \n");
+        
+        Gson gson = new Gson(); 
+        String json = gson.toJson(topicLevelList); 
+        
+        String data = "{\"name\" : \"topicV_root\", \"children\":" + json + "}";
+         
+        File file = new File("visualization/flare.json");
+
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(data);
+        bw.close();
+    }
+```
+
 Why I not using javascript to transform ? That is because java is more efficient and do not need I/O twice if print the falt json out to disk. 
+
 
      * Size definition 
 I use the MUL * probability of the words as their sizes.  Using this can efficiently showing their importance among other smame level topics
@@ -213,7 +241,7 @@ I use the MUL * probability of the words as their sizes.  Using this can efficie
      * Showing Three Charts
 1. Bubble chart 
 
-![alt text](screenshot/bubble/1.jpg "bubble chart")
+![alt text](screenshot/bubble/4.jpg "bubble chart")
 
 2. Cluster chart 
 
@@ -228,7 +256,6 @@ Click it !
 ![alt text](screenshot/zoomble/2.jpg "zoomble chart")
 
 Different feature showing in different charts fremwork. 
-
 
 
 #### Advantages of my training method  and visulazation
@@ -251,7 +278,7 @@ Different feature showing in different charts fremwork.
     1. To obatin the html chat result must open with firefox brower, need to set up server to run it if want open it with any brower.  
     Because  XMLHttpRequest cannot load flare.json. Cross origin requests are only supported for HTTP.    That is because the other brower cannot fetch local data in function d3.json () excepting firefox.
 
-    2.  Limited using pre knowledge for user input word , need imporve to handle with any input
+    2.  Limited using prior knowledge for user input word , need imporve to handle with any input
 
 ## Error analysis    
 
@@ -266,17 +293,22 @@ LDA are base on pre knowledge of the model, we may need more classificatied pre 
    (1) Some topics do not have sub topics 
    (2) Same topics may belong to different upper topics
   
+    4. Speed the processing for big data
+Need enhance efficiency and code optimization on handling big data.
+
 ## Future work
 
 1. Can prepare more accurate pre knowledge for my LDA adn this project
 2. Explore  more featues for determinng topics 
-3. We can try more machine learning method like TF-IDF to make comparsion
+3. We can try more machine learning method / classification like TF-IDF to make comparsion.
+4. Enhance efficiency in code and optimized code
 
 ## Pacakge Used and reason
 
 1. LDA4j : Reason stated before in section II .
 2. D3.js  using in visulazation , three type charts show.
 3. Gson : For converting to json format efficiently
+4. IKAnalyzer-2012 : Divide words
 
 ## Reference 
 
