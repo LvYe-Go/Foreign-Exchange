@@ -43,9 +43,9 @@ Including packages needed for the project
     *Visulization Folder: 
    - Bubble Folder : Result for bubble chart 
    
-   - Cluster: Result for cluster chart
+   - Cluster Folder: Result for cluster chart
    
-   - Zoomble : Result for zoomble chart
+   - Zoomble Folder: Result for zoomble chart
 
 Visulization result including three types of chart and html results.
 
