@@ -51,7 +51,8 @@ Visulization result including three types of chart and html results.
 
     *Noteboook Folder: 
 
-Including notebook for the project process and all screenshot for notebook
+Including notebook for the project process and all screenshot for notebook.
+Notebook expalin why I choose this method and the libaray and comparsion to TF-IDF, certainly all process generating results. 
 
 3  Project explanation and reason in notebook/lab_notebook.md  ! 
 
