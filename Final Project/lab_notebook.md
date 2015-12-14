@@ -212,11 +212,24 @@ I use the MUL * probability of the words as their sizes.  Using this can efficie
 
      * Showing Three Charts
 1. Bubble chart 
-2. Cluster chart 
-3. Zoomble chart 
-Different feature showing in different charts fremwork. 
 
 ![alt text](screenshot/bubble/1.jpg "bubble chart")
+
+2. Cluster chart 
+
+![alt text](screenshot/cluster/1.jpg "cluster chart")
+
+3. Zoomble chart
+
+![alt text](screenshot/zoomble/1.jpg "zoomble chart")
+
+Click it !
+
+![alt text](screenshot/zoomble/2.jpg "zoomble chart")
+
+Different feature showing in different charts fremwork. 
+
+
 
 #### Advantages of my training method  and visulazation
 
