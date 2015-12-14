@@ -41,8 +41,13 @@ Through using package, implemented my method on generating heirachical topics an
 Including packages needed for the project
 
     *Visulization Folder: 
+   - Bubble Folder : Result for bubble chart 
+   
+   - Cluster: Result for cluster chart
+   
+   - Zoomble : Result for zoomble chart
 
-visulization result including three types of chart and html resuls
+Visulization result including three types of chart and html results.
 
     *Noteboook Folder: 
 
@@ -53,7 +58,7 @@ Including notebook for the project process and all screenshot for notebook
 4  I visulaized the data heirachical topics by three types of graph 
    Please open in firefox browser .
    - Bubble
-   - Chart
+   - Cluster
    - Zoomble
    
    Please refer to the notebook or screenshot to review the result
